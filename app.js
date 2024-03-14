@@ -54,3 +54,11 @@ solarButton.onclick = () => {
     localStorage.setItem('isSolar', true);
   }
 };
+
+function playAudio() {
+  var audio = document.getElementById("56k");
+  audio.play();
+  audio.addEventListener('ended', function(){
+  alert('Error 404: Modem Not Found :(');
+  });
+}
